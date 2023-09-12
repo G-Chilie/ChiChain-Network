@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Reset some default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Main content style */
+body {
+    padding-bottom: 60px;  /* Adjust depending on the height of the footer */
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* space between logo, title, and description */
+}
+
+#company-logo {
+    width: 100px; /* adjust as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #34495e;
+}
+
+nav li {
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-card {
+    width: 80%; /* adjust as needed */
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f7f7f7;
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    text-align: center;
+    color: #34495e;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.service-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* About Us */
+
+#about-section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+#about-section h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Careers */
+
+#careers-section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+#careers-section h2, #careers-section h3 {
+    color: #2c3e50;
+}
+
+.role-list ul {
+    list-style-type: square;
+    text-align: left;
+    padding-left: 40%;
+}
+
+.application-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.application-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+    width: 30%; /* Distributes space among the three sections */
+    text-align: center;
+}
+
+.footer-section h4 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sponsors img {
+    margin: 0 10px; /* Creates spacing between logos */
+    height: 40px; /* Adjusts logo height */
+}
+
+form {
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
